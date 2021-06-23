@@ -1,0 +1,44 @@
+.notification-item {
+  display: flex;
+  font-size: 16px;
+  position: relative;
+  border-bottom: var(--border__table);
+  margin-bottom: 11px;
+
+  > .anticon {
+    margin-right: 15px;
+    margin-top: 5px;
+  }
+
+  > .notification-item__icon {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #E6AE2D;
+    margin-top: 8px;
+    margin-right: 9px;
+  }
+
+  > .notification-item__content {
+      > .notification-item__meta {
+        margin-bottom: 0px;
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--color__gray_light);
+        line-height: 22px;
+
+        &:last-of-type {
+          font-size: 13px;
+          opacity: 0.7;
+          color: var(--color__gray);
+          margin-bottom: 11px;
+          font-weight: 400;
+        }
+      }
+  }
+
+  > .button {
+    position: absolute;
+    right: 0;
+  }
+}

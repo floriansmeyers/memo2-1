@@ -1,0 +1,72 @@
+.conversations-outer {
+  padding: 25px;
+  > .conversations {
+    height: 350px;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: var(--color__gray);
+    }
+
+    > .ant-spin {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    >.conversation {
+      display: flex;
+      justify-content: space-between;
+      max-width: 400px;
+      background-color: var(--background-color__blue_light);
+      padding: 20px;
+      border-radius: 15px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+
+      &--dif {
+        background-color: var(--background-color__green_active);
+        margin-left: auto;
+      }
+      > .conversation__meta {
+        > .conversation__name {
+          font-weight: 600;
+          font-size: 11px;
+        }
+        > .conversation__content {
+          width: 200px;
+        }
+      }
+
+      > .conversation__time {
+        > .conversation__date {
+          font-weight: 600;
+          font-size: 11px;
+        }
+      }
+    }
+  }
+
+  > .conversations-answer {
+    margin-top: 30px;
+    .ant-form {
+      position: relative;
+      .emoji-picker {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 5px;
+        top: -30px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+

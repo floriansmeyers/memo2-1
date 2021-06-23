@@ -1,0 +1,31 @@
+query getCustomersWithInfo($limit: Int, $skip: Int, $sort: [SortInput!], $filter: CustomerFilterInput) {
+    customers(limit: $limit, skip: $skip, sort: $sort, filter: $filter) {
+        count
+        items {
+            id
+            platformId
+            parentId
+            name
+            info {
+                welcomeMessage
+                contactInformationList {
+                    type
+                    address {
+                        city
+                        country
+                        postalCode
+                        street
+                        streetNumber
+                        box
+                    }
+                    emailAddress
+                    faxNumber
+                    mobilePhoneNumber
+                    phoneNumber1
+                    phoneNumber2
+                    website
+                }
+            }
+        }
+    }
+}

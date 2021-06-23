@@ -1,0 +1,38 @@
+.customer-info-section {
+  display: flex;
+  justify-content: space-between;
+  border: var(--border__page-header);
+  background-color: var(--color__white);
+
+  .customer-welcome-container {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: 23px 20px;
+    font: var(--font__content-standard);
+    color: var(--color__gray_light);
+
+    > .customer-welcome__message-col {
+      .customer-welcome__title-container {
+        display: flex;
+        align-items: center;
+        svg {
+          height: 18px;
+          width: 22px;
+        }
+        > .customer-welcome__title-message {
+          font: var(--font__content-tabs);
+          margin-left: 8px;
+        }
+      }
+      .customer-welcome__incoming-message {
+        > .message {
+          display: block;
+          margin-left: 30px;
+          color: var(--color__gray_light);
+          font: var(--font__content-standard);
+        }
+      }
+    }
+  }
+}

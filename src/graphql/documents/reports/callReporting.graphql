@@ -1,0 +1,21 @@
+#import "./callBaseReportingFragment.graphql"
+query callReporting($filter: FilterInput) {
+    callReporting(filter: $filter) {
+        waitingTimeStatistics {
+            ...baseCallReporting
+            averageWaitingTime
+        }
+        durationTimeStatistics {
+            ...baseCallReporting
+            averageDuration
+        }
+        missedCallStatistics {
+            ...baseCallReporting
+            canBeDisplayed
+            averageWaitingTime
+        }
+        nrOfCallsPerHourStatistics {
+            ...baseCallReporting
+        }
+    }
+}

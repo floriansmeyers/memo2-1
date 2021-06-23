@@ -1,0 +1,20 @@
+query getInvoices($filter: InvoiceFilterInput, $limit: Int, $skip: Int, $sort: [SortInput!]) {
+    invoices(filter: $filter, limit: $limit, skip: $skip, sort: $sort) {
+        count
+        items {
+            id
+            amount
+            date
+            dueDate
+            year
+            month
+            invoiceNr
+            paid
+            type
+            attachment {
+                fileName
+                url
+            }
+        }
+    }
+}

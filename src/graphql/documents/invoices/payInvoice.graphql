@@ -1,0 +1,5 @@
+mutation payInvoice($id: Int!) {
+    payInvoice(id: $id) {
+        redirectUrl
+    }
+}

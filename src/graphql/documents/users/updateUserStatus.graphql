@@ -1,0 +1,5 @@
+mutation updateUserStatus($input: UpdateUserStatusInput!) {
+    updateUserStatus(input: $input) {
+        active
+    }
+}

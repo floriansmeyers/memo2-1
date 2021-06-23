@@ -1,0 +1,18 @@
+.language-buttons-container {
+  margin-bottom: 20px;
+
+  .language-button {
+    text-transform: uppercase;
+    margin-right: 10px;
+    width: 20px;
+    cursor: pointer;
+    color: var(--color__gray);
+    font-weight: normal;
+
+    &:hover,
+    &.active {
+      color: var(--color__blue);
+      font-weight: 800;
+    }
+  }
+}

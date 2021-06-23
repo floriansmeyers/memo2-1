@@ -1,0 +1,65 @@
+fragment meccaConversationPreview on MeccaConversationModel {
+    id
+    ... on MeccaTextConversationModel {
+        channelType
+        createdAt
+        __typename
+        channel {
+            channelIdentifier
+            type
+            __typename
+        }
+        createdBy {
+            id
+            displayName
+            __typename
+        }
+        read
+        flagged
+        status
+        unformattedBodyText
+        unformattedText
+        htmlStructuredMessage
+        htmlMessage
+        # preview {
+        #     type
+        #     ... on MeccaTextConversationPreviewModelTextAndAttachments {
+        #         type
+        #         messageTime
+        #         content
+        #         attachments {
+        #             fileName
+        #             url
+        #             __typename
+        #         }
+        #         __typename
+        #     }
+        #     ... on MeccaTextConversationPreviewModelTextAndAttachmentsWithStructuredMessage {
+        #         type
+        #         messageTime
+        #         content
+        #         structuredMessage {
+        #             name
+        #             fields {
+        #                 sequence
+        #                 label
+        #                 __typename
+        #             }
+        #             values {
+        #                 sequence
+        #                 value
+        #                 __typename
+        #             }
+        #             __typename
+        #         }
+        #         attachments {
+        #             fileName
+        #             url
+        #             __typename
+        #         }
+        #         __typename
+        #     }
+        #     __typename
+        # }
+    }
+}

@@ -1,0 +1,9 @@
+query getDefaultLocale {
+  defaultLocale {
+    type
+    content {
+      language
+      value
+    }
+  }
+}

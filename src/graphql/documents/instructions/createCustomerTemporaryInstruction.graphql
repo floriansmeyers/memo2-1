@@ -1,0 +1,11 @@
+mutation createCustomerTemporaryInstruction($input: CreateCustomerTemporaryInstructionInput!) {
+    createCustomerTemporaryInstruction(input: $input) {
+        id
+        updatedAt
+        name
+        content
+        validFrom
+        validUntil
+        active
+    }
+}

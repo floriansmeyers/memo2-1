@@ -1,0 +1,29 @@
+fragment socialConversationPreview on SocialConversationModel {
+    id
+    channelType
+    createdAt
+    __typename
+    createdBy {
+        id
+        displayName
+    }
+    read
+    archived
+    flagged
+
+    channel {
+        type
+        channelIdentifier
+    }
+
+    status
+    preview {
+        type
+        messageTime
+        content
+        attachments {
+            fileName
+            url
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.social-media__first-column {
+  display: flex;
+  align-items: center;
+
+  .platform-button {
+    &--active {
+      &.ant-btn {
+        font: var(--font__content-standard);
+        color: var(--color__green_active);
+        background-color: var(--background-color__green_active);
+        border: var(--border__active-button);
+        border-radius: var(--border-radius__button);
+      }
+    }
+    &--pause {
+      &.ant-btn {
+        font: var(--font__content-standard);
+        color: var(--color__gray_light);
+        background-color: #efefef;
+        border: 1px solid var(--color__gray_light);
+        border-radius: var(--border-radius__button);
+      }
+    }
+  }
+
+  .platform-name {
+    text-transform: capitalize;
+  }
+
+  .platform-logo {
+    height: 35px;
+    margin: 0 20px;
+    &--whatsapp {
+      height: 45px;
+      margin: 0 16px;
+    }
+  }
+}

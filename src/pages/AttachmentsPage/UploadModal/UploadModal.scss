@@ -1,0 +1,10 @@
+.attachments-upload-modal {
+  &.ant-form {
+    .upload {
+      display: flex;
+      align-items: flex-end;
+      width: 226px;
+      height: 74px;
+    }
+  }
+}

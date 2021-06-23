@@ -1,0 +1,38 @@
+{
+    "arrowParens": "always",
+    "bracketSpacing": true,
+    "htmlWhitespaceSensitivity": "css",
+    "insertPragma": false,
+    "jsxBracketSameLine": false,
+    "jsxSingleQuote": false,
+    "overrides": [
+      {
+        "files": [".babelrc", ".prettierrc", ".eslintrc", "package.json"],
+        "options": {
+          "parser": "json"
+        }
+      },
+      {
+        "files": "src/**/*.css",
+        "options": { "parser": "css" }
+      },
+      {
+        "files": "src/**/*.scss",
+        "options": { "parser": "scss" }
+      },
+      {
+        "files": "src/**/*.md",
+        "options": { "parser": "markdown" }
+      }
+    ],
+    "parser": "typescript",
+    "printWidth": 100,
+    "proseWrap": "preserve",
+    "quoteProps": "as-needed",
+    "requirePragma": false,
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "all",
+    "useTabs": false
+  }

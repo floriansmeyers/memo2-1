@@ -1,0 +1,5 @@
+mutation updateCustomerTemporaryInstruction($input: UpdateCustomerTemporaryInstructionInput!, $id: Int!) {
+    updateCustomerTemporaryInstruction(input: $input, id: $id) {
+        id
+    }
+}

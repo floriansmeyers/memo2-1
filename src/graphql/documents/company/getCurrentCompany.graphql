@@ -1,0 +1,10 @@
+query getCurrentCompany {
+    getCurrentCompany {
+        id
+        name
+        profileName
+        address1
+        address2
+        __typename
+    }
+}

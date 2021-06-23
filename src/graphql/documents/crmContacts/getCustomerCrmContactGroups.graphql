@@ -1,0 +1,13 @@
+query getCustomerCrmContactGroups($filter: CustomerCrmContactGroupFilter, $limit: Int, $skip: Int, $sort: [SortInput!]) {
+    customerCrmContactGroups(filter: $filter, limit: $limit, skip: $skip, sort: $sort) {
+        count
+        items {
+           id
+           name
+           subGroups {
+               id
+               name
+           } 
+        }
+    }
+}

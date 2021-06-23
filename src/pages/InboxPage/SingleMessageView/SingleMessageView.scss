@@ -1,0 +1,20 @@
+.call-center-single-message {
+  .single-message-header {
+    display: flex;
+    background-color: var(--background-color__gray_light2);
+    border: var(--border__page-header);
+    border-radius: 5px 0px 0px 0px;
+
+    .call-center-title-actions {
+      .action-icons {
+        margin-left: 70px;
+      }
+    }
+  }
+
+  .single-message-content {
+    padding: 40px 40px 0 0;
+    height: 600px;
+    overflow-y: auto;
+  }
+}

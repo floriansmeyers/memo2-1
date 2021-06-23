@@ -1,0 +1,40 @@
+.ant-modal {
+  .ant-modal-content {
+    border-radius: var(--border-radius__sm);
+    border: var(--border__table);
+
+    .ant-modal-close {
+      padding: 4px 0;
+      &:focus {
+        outline: unset;
+      }
+    }
+    .ant-modal-header {
+      padding: 20px;
+      .ant-modal-title {
+        font: var(--font__page-title);
+        color: var(--color__gray);
+      }
+      background-color: var(--background-color__gray_light3);
+      border-radius: 5px 5px 0 0;
+    }
+
+    .ant-modal-body {
+      font: var(--font__content-tabs);
+      color: var(-color__gray_light);
+      padding: 20px;
+    }
+
+    .ant-modal-footer {
+      display: flex;
+      justify-content: flex-end;
+      border-top: unset;
+      padding: 15px 20px 20px;
+      border-radius: 0 0 5px 5px;
+
+      .ant-btn {
+        margin-left: 20px;
+      }
+    }
+  }
+}

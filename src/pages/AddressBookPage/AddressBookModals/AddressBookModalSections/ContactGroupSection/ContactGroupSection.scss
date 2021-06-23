@@ -1,0 +1,29 @@
+.contact-group-section {
+  padding-bottom: 15px;
+
+  .row {
+    margin-bottom: 20px;
+  }
+
+  .link-like-button {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--color__blue);
+    cursor: pointer;
+    width: fit-content;
+  }
+
+  .contact-group-input {
+    padding-top: 15px;
+
+    &:not(:last-of-type) {
+      border-bottom: 1px dotted lightgray;
+    }
+
+    .icon {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

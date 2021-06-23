@@ -1,0 +1,14 @@
+query getPairedChannels($filter: PairedChannelFilterInput, $sort: [SortInput!], $skip: Int, $limit: Int) {
+  pairedChannels(filter: $filter, sort: $sort, skip: $skip, limit: $limit){
+    count
+    items {
+        id
+        type
+        account
+        active
+        channelIdentifier
+        redirect
+        redirectDelay
+    }
+  }
+}

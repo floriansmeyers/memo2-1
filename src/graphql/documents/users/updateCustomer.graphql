@@ -1,0 +1,25 @@
+mutation updateCustomer($id: ID!, $input: UpdateCustomerInput!) {
+    updateCustomer(id: $id, input: $input) {
+        id
+        name
+        info {
+            contactInformationList {
+                type
+                address {
+                    city,
+                    country,
+                    postalCode
+                    street
+                    streetNumber
+                    box
+                }
+                emailAddress
+                faxNumber
+                mobilePhoneNumber
+                phoneNumber1
+                phoneNumber2
+                website
+            }
+        }
+    }
+}

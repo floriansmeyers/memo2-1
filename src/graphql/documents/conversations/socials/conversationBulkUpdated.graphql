@@ -1,0 +1,6 @@
+#import "./conversationDetailsFragment.graphql"
+subscription SocialConversationBulkUpdated {
+    SocialConversationBulkUpdated {
+        ...socialConversationDetails
+    }
+}

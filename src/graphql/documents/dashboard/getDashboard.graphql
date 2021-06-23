@@ -1,0 +1,22 @@
+query getDashboard {
+    dashboard {
+        socialConversations {
+            total
+            countsByStatus {
+                status
+                total
+            }
+        }
+        meccaConversations {
+            total
+            countsByStatus {
+                status
+                total
+            }
+        }
+        invoices {
+            current
+            open
+        }
+    }
+}

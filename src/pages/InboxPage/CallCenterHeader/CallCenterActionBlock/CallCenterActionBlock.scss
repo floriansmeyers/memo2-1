@@ -1,0 +1,17 @@
+.call-center-title-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.call-center-header__left {
+  .call-center-title-actions {
+    padding: 0 20px 20px 20px;
+  }
+}
+
+.single-message-header {
+  .call-center-title-actions {
+    padding: 20px;
+  }
+}

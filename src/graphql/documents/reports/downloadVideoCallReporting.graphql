@@ -1,0 +1,7 @@
+query downloadVideoCallReporting($filter: FilterInput, $sort: [SortInput!], $lang: LangEnum) {
+    downloadVideoCallReporting(filter: $filter, sort: $sort, lang: $lang) {
+        content
+        contentType
+        fileName
+    }
+}

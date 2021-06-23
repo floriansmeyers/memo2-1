@@ -1,0 +1,5 @@
+mutation registerWebpush($input: RegisterWebPushInput!) {
+    registerWebpush(input: $input) {
+        success
+    }
+}

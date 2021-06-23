@@ -1,0 +1,3 @@
+mutation updateCurrentUserLocale($locale: String!) {
+    updateCurrentUserLocale(locale: $locale)
+}

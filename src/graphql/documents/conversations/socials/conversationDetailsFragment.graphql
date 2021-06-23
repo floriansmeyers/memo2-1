@@ -1,0 +1,64 @@
+fragment socialConversationDetails on SocialConversationModel {
+    id
+    channelType
+    createdAt
+    __typename
+    createdBy {
+        id
+        displayName
+    }
+    read
+    archived
+    flagged
+
+    channel {
+        type
+        channelIdentifier
+    }
+
+    status
+    preview {
+        type
+        messageTime
+        content
+        attachments {
+            fileName
+            url
+        }
+    }
+
+    events {
+        eventTime
+        __typename
+    }
+    participants {
+        channel
+        channelId
+    }
+    related {
+        id
+    }
+
+    multipleResponsesTill
+    canSendResponse
+
+    messages {
+        id
+        channelType
+        external
+        attachments {
+            fileName
+            url
+        }
+        content
+        messageTime
+        sender {
+            id
+            displayName
+            __typename
+        }
+        source
+        destination
+        conversationId
+    }
+}

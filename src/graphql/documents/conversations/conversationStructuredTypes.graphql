@@ -1,0 +1,26 @@
+query conversationStructuredTypes($limit: Int, $skip: Int, $sort: [SortInput!]) {
+    conversationStructuredTypes(limit: $limit, skip: $skip, sort: $sort) {
+        count
+        items {
+            name
+            fields {
+                sequence
+                isEditableByCustomer
+                fieldType {
+                    name
+                    regExForValidation
+                    regExForValidChars
+                    mask
+                    maxLength
+                    errorMessage
+                }
+                label
+                description
+                required
+                readonly
+                defaultValue
+                options
+            }
+        }
+    }
+}

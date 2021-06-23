@@ -1,0 +1,44 @@
+.attachments {
+  padding: 25px;
+  height: 600px;
+  overflow-y: auto;
+
+  > .ant-spin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  > .attachment {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: var(--background-color__gray_light);
+    border-radius: 3px;
+    box-shadow: 3px 1px 7px -1px rgba(34, 60, 80, 0.2);
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    > .attachment-meta {
+      > .attachment-meta__title {
+        font-weight: 600;
+      }
+    }
+
+    > .attachment-actions {
+      display: flex;
+      > .attachment-actions__button {
+        outline: none;
+        border: none;
+        background-color: transparent;
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

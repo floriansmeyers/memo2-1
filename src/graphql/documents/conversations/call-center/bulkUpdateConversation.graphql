@@ -1,0 +1,6 @@
+#import "./conversationPreviewFragment.graphql"
+mutation bulkUpdateMeccaConversations($ids: [ID!]!, $input: UpdateMeccaConversationInputModel!) {
+    bulkUpdateMeccaConversations(ids: $ids, input: $input) {
+        id
+    }
+}

@@ -1,0 +1,48 @@
+mutation updateCustomerCrmContact($id: Int! $input: UpdateCustomerCrmContactInput!) {
+    updateCustomerCrmContact(id: $id, input: $input) {
+        id
+        title
+        firstName
+        lastName
+        sex
+        functionName
+        addresses {
+            id
+            city
+            country
+            postalCode
+            address
+            description
+        }
+        communications {
+            type {
+                id
+                name
+                category
+            }
+            sequence
+            value
+            description
+            forwardStatus
+            forwardCondition
+            passThroughStatus
+            passThroughCondition
+        }
+        groups {
+            groupId
+            group {
+                id
+                name
+                subGroups {
+                    id
+                       name  
+                }
+            }
+            subGroupId
+            subGroup {
+                id
+                name
+            }
+        }
+    }
+}

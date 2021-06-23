@@ -1,0 +1,20 @@
+query getTheme {
+  theme {
+    colors {
+        error
+        info
+        primary
+        primaryDarkShade
+        primaryLightShade
+        secondary
+        secondaryDarkShade
+        secondaryLightShade
+        success
+        warning
+    }
+    images {
+        type
+        url
+    }
+  }
+}

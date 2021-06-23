@@ -1,0 +1,10 @@
+query videoCalls($filter: VideoCallFilterInput, $limit: Int, $skip: Int, $sort: [SortInput!]) {
+    videoCalls(filter: $filter, limit: $limit, skip: $skip, sort: $sort) {
+        count
+        items {
+            id
+            createdAt
+            duration
+        }
+    }
+}

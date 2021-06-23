@@ -1,0 +1,7 @@
+#import "./videoCallSettingsFragment.graphql"
+
+mutation createVideoCallSettings($input: VideoCallSettingsInput!) {
+    createVideoCallSettings(input: $input) {
+        ...videoCallSettingsFragment
+    }
+}

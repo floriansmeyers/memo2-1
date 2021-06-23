@@ -1,0 +1,12 @@
+#query getUnreadConversationsCount($filter: ConversationFilterInput, $sort: [SortInput!], $skip: Int, $limit: Int) {
+#  conversations(filter: $filter, sort: $sort, skip: $skip, limit: $limit){
+#    count
+#  }
+#}
+
+# TODO: fix bove query
+query {
+  socialConversations {
+    count
+  }
+}

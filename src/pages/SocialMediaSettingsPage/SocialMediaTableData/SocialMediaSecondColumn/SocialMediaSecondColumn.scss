@@ -1,0 +1,32 @@
+.second-column {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  input {
+    width: 61px;
+    margin-right: 10px;
+
+    &::-webkit-input-placeholder {
+      text-align: right;
+    }
+    &::-moz-placeholder {
+      text-align: right;
+    }
+    &:-ms-input-placeholder {
+      text-align: right;
+    }
+    &:-moz-placeholder {
+      text-align: right;
+    }
+  }
+
+  .ant-select {
+    min-width: 110px;
+    margin-right: 10px;
+  }
+
+  .ant-checkbox-wrapper {
+    margin-right: 10px;
+    color: var(--color__gray_lighter1);
+  }
+}

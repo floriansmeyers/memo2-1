@@ -1,0 +1,35 @@
+.ant-table {
+  .invoice-status {
+    display: flex;
+    justify-content: space-between;
+    > .invoice-status__paid {
+      color: var(--color__green_active);
+      opacity: 0.8;
+    }
+
+    > .custom-button {
+      background-color: transparent;
+      border: unset;
+      text-decoration: underline;
+      color: var(--color__blue);
+      font-weight: 400;
+      opacity: 0.8;
+      outline: none;
+      box-shadow: none;
+      padding-left: 0;
+      min-width: unset;
+    }
+
+    > .invoice-download {
+      font-size: 16px;
+      color: #C5C5C5;
+      padding-right: 23px;
+      display: flex;
+      align-items: center;
+
+      > .invoice-download__txt {
+        margin-left: 12px;
+      }
+    }
+  }
+}

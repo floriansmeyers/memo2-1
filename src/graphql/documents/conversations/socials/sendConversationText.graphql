@@ -1,0 +1,6 @@
+mutation sendSocialConversationText($id: ID!, $input: SendConversationTextInput!) {
+    sendSocialConversationText(id: $id, input: $input) {
+        success
+        message
+    }
+}

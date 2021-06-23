@@ -1,0 +1,20 @@
+.attachment {
+  > .attachment__inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    > .attachment-info {
+      font-size: 16px;
+      opacity: 0.8;
+      display: flex;
+      align-items: baseline;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.video-reception-modal {
+  &.ant-modal {
+    min-width: 80vw;
+    max-width: 90vw;
+
+    .ant-form-item {
+      display: block;
+    }
+
+    .qr {
+      margin: 15px 0;
+      position: relative;
+      display: inline-block;
+
+      img {
+        transition: 0.3s;
+      }
+
+      &:hover {
+        img {
+          opacity: 0.2;
+        }
+        .anticon {
+          opacity: 1;
+        }
+      }
+
+      .anticon {
+        transition: 0.3s;
+        position: absolute;
+        top: 26px;
+        left: 26px;
+        font-size: 80px;
+        opacity: 0;
+      }
+    }
+  }
+}

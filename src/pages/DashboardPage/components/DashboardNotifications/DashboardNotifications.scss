@@ -1,0 +1,52 @@
+.dashboard-notifications {
+  margin: 0 20px 20px 0;
+  height: fit-content;
+
+  .dashboard-notifications__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 44px;
+    background-color: #fff6e2;
+    color: #e6ae2d;
+    border: var(--border__notifications);
+    border-radius: 5px 5px 0 0;
+    padding: 0 9px 0 20px;
+    font: var(--font__content-title);
+
+    .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+      background-color: unset;
+      border: unset;
+    }
+
+    .ant-select-selection-item {
+      color: #e6ae2d;
+      font: var(--font__content-title);
+    }
+    .ant-select-arrow {
+      color: #e6ae2d;
+    }
+  }
+
+  .dashboard-notifications__main {
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: var(--color__white);
+    border: var(--border__notifications);
+    border-radius: 0 0 5px 5px;
+    border-top: unset;
+    min-height: 100px;
+
+    &::-webkit-scrollbar {
+      width: 3px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(230, 174, 45, 0.4);
+    }
+
+    > div {
+      padding: 11px 13px;
+    }
+  }
+}

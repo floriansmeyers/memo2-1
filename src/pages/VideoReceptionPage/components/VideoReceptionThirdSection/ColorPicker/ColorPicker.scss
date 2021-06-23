@@ -1,0 +1,40 @@
+.color-picker__input-container {
+  &.ant-row {
+    .ant-input-group-addon {
+      padding: 0;
+    }
+
+    .color-picker__input {
+      &.ant-row {
+        margin-bottom: 0;
+      }
+    }
+
+    .trigger {
+      height: 42px;
+      width: 42px;
+      box-shadow: none;
+      display: block;
+      border-radius: 4px 0 0 4px;
+      cursor: pointer;
+    }
+
+    .popover {
+      position: absolute;
+      z-index: 2;
+
+      .chrome-picker {
+        z-index: 111;
+        cursor: pointer;
+      }
+
+      .cover {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+      }
+    }
+  }
+}

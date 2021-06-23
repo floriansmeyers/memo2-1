@@ -1,0 +1,20 @@
+subscription SocialNewReceivedMessage {
+    SocialNewReceivedMessage {
+        channelType
+        attachments {
+            fileName
+            url
+        }
+        content
+        external
+        conversationId
+        destination
+        messageTime
+        sender {
+            id
+            displayName
+            __typename
+        }
+        source
+    }
+}

@@ -1,0 +1,25 @@
+mutation answerVideoCall($callId: ID!) {
+    answerVideoCall(callId: $callId) {
+        callId
+        customerName
+        location {
+            id
+            address {
+                city
+                country
+                postalCode
+                street
+                streetNumber
+            }
+            clientSideRotation
+            clientSideRotationInputStream
+            agentSideRotation
+            customerId
+            description
+            lat
+            lng
+            title
+        }
+        token
+    }
+}

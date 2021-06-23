@@ -1,0 +1,5 @@
+mutation forwardMeccaConversationsAgent($messagesIds: [ID!]!, $input: ForwardConversationAgentMessage!) {
+    forwardMeccaConversationsAgent(messagesIds: $messagesIds, input: $input) {
+        success
+    }
+}

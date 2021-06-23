@@ -1,0 +1,22 @@
+query getStandby($filter: StandbyFilter, $limit: Int, $skip: Int, $sort: [SortInput!]) {
+    standby(filter: $filter, limit: $limit, skip: $skip, sort: $sort) {
+        count
+        items {
+            id
+            from {
+                hours
+                minutes
+            }
+            to {
+                hours
+                minutes
+            }
+            notifyChannels
+            crmContacts {
+                id
+                firstName
+                lastName
+            }
+        }
+    }
+}

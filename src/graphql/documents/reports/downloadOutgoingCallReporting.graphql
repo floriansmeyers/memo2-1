@@ -1,0 +1,7 @@
+query downloadOutgoingCallReporting($filter: FilterInput, $sort: [SortInput!], $phoneNumber: String, $lang: LangEnum) {
+    downloadOutgoingCallReporting(filter: $filter, sort: $sort, lang: $lang, phoneNumber: $phoneNumber) {
+        content
+        contentType
+        fileName
+    }
+}

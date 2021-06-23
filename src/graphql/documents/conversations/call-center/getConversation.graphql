@@ -1,0 +1,6 @@
+#import "./conversationDetailsFragment.graphql"
+query getMeccaConversation($id: ID!) {
+    meccaConversation(id: $id) {
+        ...meccaConversationDetails
+    }
+}

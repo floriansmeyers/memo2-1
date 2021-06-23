@@ -1,0 +1,5 @@
+query videoCallReporting($filter: FilterInput) {
+    videoCallReporting(filter: $filter) {
+        totalDuration
+    }
+}

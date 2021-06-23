@@ -1,0 +1,20 @@
+.video {
+  > .video-header {
+    display: flex;
+    padding: 23px 20px 27px;
+    margin-bottom: 18px;
+    border: var(--border__page-header);
+    border-top-color: transparent;
+    border-radius: 0 0 5px 5px;
+    font-size: 16px;
+    color: var(--color__gray);
+
+    > .video_header__total {
+      margin-right: 100px;
+    }
+
+    > .video_header__nr {
+      margin-bottom: 0;
+    }
+  }
+}

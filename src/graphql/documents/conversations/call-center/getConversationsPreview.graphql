@@ -1,0 +1,9 @@
+#import "./conversationPreviewFragment.graphql"
+query getMeccaConversationsPreview($filter: FilterMeccaConversationInputModel, $sort: SortOrder, $skip: Int, $limit: Int) {
+    meccaConversations(filter: $filter, sort: $sort, skip: $skip, limit: $limit) {
+        count
+        items {
+            ...meccaConversationPreview
+        }
+    }
+}

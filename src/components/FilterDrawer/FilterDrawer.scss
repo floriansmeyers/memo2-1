@@ -1,0 +1,27 @@
+.filter {
+  .filter-drawer {
+    .ant-drawer-content-wrapper {
+      width: 300px !important;
+      .filter-drawer__actions {
+        text-align: right;
+        > button {
+          &:first-child {
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+
+    .ant-row {
+      .read {
+        .ant-radio-group {
+          display: flex;
+          > .ant-radio-button-wrapper {
+            width: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+fragment conversationPreview on Conversation {
+    id
+    channelType
+    createdAt
+    createdBy {
+        displayName
+    }
+    flagged
+    archived
+    read
+    __typename
+    #    ... on TextConversation {
+    #        channel {
+    #            channelIdentifier
+    #            type
+    #        }
+    #        status
+    #        preview {
+    #            type
+    #            ... on TextConversationPreviewTextAndAttachments {
+    #                type
+    #                messageTime
+    #                content
+    #                attachments {
+    #                    fileName
+    #                    url
+    #                }
+    #            }
+    #            ... on TextConversationPreviewTextAndAttachmentsWithStructuredMessage {
+    #                type
+    #                messageTime
+    #                content
+    #                structuredMessage {
+    #                    name
+    #                    fields {
+    #                        sequence
+    #                        label
+    #                    }
+    #                    values {
+    #                        sequence
+    #                        value
+    #                    }
+    #                }
+    #                attachments {
+    #                    fileName
+    #                    url
+    #                }
+    #            }
+    #        }
+    #    }
+}

@@ -1,0 +1,21 @@
+.video-reception__sixth-section-content {
+  &.ant-row {
+    border: var(--border__table);
+    padding: 20px;
+
+    .ant-form-item-control-input-content {
+      display: flex;
+      flex-direction: column;
+
+      .anticon-minus-circle {
+        align-self: flex-end;
+        cursor: pointer;
+        svg {
+          height: 25px;
+          width: 25px;
+          color: var(--color__blue);
+        }
+      }
+    }
+  }
+}

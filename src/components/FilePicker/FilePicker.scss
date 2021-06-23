@@ -1,0 +1,12 @@
+.file-picker {
+  .custom-button {
+    &.ant-btn {
+      svg {
+        text {
+          fill: var(--color__blue);
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

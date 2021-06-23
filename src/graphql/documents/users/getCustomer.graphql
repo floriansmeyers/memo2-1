@@ -1,0 +1,10 @@
+query getCustomer($filter: CustomerFilterInput) {
+    customer(filter: $filter) {
+        id
+        name
+        platformId
+        parentId
+        groupId
+        appointmentContractYn
+    }
+}

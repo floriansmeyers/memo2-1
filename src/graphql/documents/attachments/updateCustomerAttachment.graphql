@@ -1,0 +1,13 @@
+mutation updateCustomerAttachment($id: Int!, $input: UpdateCustomerAttachmentInput!) {
+    updateCustomerAttachment(id: $id, input: $input) {
+        id
+        name
+        validFrom
+        validTill
+        attachment {
+            fileName
+            url
+        }
+        active
+    }
+}

@@ -1,0 +1,133 @@
+fragment meccaConversationDetails on MeccaConversationModel {
+    id
+    ... on MeccaTextConversationModel {
+        channelType
+        createdAt
+        __typename
+        events {
+            eventTime
+            __typename
+        }
+        related {
+            id
+            __typename
+        }
+        channel {
+            channelIdentifier
+            type
+            __typename
+        }
+        createdBy {
+            id
+            displayName
+            __typename
+        }
+        messages {
+            __typename
+        }
+        agentMessages {
+            id
+            messages {
+                content
+                messageTime
+                sender {
+                    displayName
+                    __typename
+                }
+                __typename
+            }
+            attachments {
+                id
+                fileName
+                url
+                __typename
+            }
+            structuredMessage {
+                name
+                fields {
+                    sequence
+                    fieldType {
+                        name
+                        regExForValidation
+                        regExForValidChars
+                        mask
+                        maxLength
+                        errorMessage
+                        __typename
+                    }
+                    label
+                    description
+                    required
+                    readonly
+                    defaultValue
+                    options
+                    __typename
+                }
+                values {
+                    sequence
+                    value
+                    __typename
+                }
+                __typename
+            }
+            __typename
+        }
+        attachments {
+            id
+            fileName
+            name
+            fileTypeId
+            dateTimeAdded
+            url
+        }
+        read
+        flagged
+        status
+        unformattedBodyText
+        unformattedText
+        htmlStructuredMessage
+        htmlMessage
+        # preview {
+        #     type
+        #     ... on MeccaTextConversationPreviewModelTextAndAttachments {
+        #         type
+        #         messageTime
+        #         content
+        #         attachments {
+        #             id
+        #             fileName
+        #             url
+        #             __typename
+        #         }
+        #         __typename
+        #     }
+        #     ... on MeccaTextConversationPreviewModelTextAndAttachmentsWithStructuredMessage {
+        #         type
+        #         messageTime
+        #         content
+        #         structuredMessage {
+        #             name
+        #             fields {
+        #                 sequence
+        #                 label
+        #                 __typename
+        #             }
+        #             values {
+        #                 sequence
+        #                 value
+        #                 __typename
+        #             }
+        #             __typename
+        #         }
+        #         attachments {
+        #             id
+        #             fileName
+        #             url
+        #             __typename
+        #         }
+        #         __typename
+        #     }
+        #     __typename
+        # }
+    }
+}

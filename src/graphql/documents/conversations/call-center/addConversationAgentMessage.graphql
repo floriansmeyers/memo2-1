@@ -1,0 +1,5 @@
+mutation addMeccaConversationAgentMessage($agentMessageId: ID!, $conversationId: ID!, $input: AddConversationAgentMessage!) {
+    addMeccaConversationAgentMessage(agentMessageId: $agentMessageId, conversationId: $conversationId, input: $input) {
+        success
+    }
+}

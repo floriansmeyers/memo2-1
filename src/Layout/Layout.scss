@@ -1,0 +1,16 @@
+.ant-layout {
+  background-color: var(--color__white) !important;
+}
+.ant-layout .site-layout {
+  background-color: var(--color__white);
+  width: unset !important;
+  margin-left: 5px;
+
+  .site-layout-background {
+    background-color: var(--color__white);
+  }
+  .ant-layout-content {
+    padding: 0;
+    min-height: 280px;
+  }
+}

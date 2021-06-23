@@ -1,0 +1,9 @@
+query getCountries($filter: CountryFilter, $limit: Int, $skip: Int, $sort: [SortInput!]) {
+    countries(filter: $filter, limit: $limit, skip: $skip, sort: $sort) {
+        count
+        items {
+            iso
+            name
+        }
+    }
+}

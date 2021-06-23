@@ -1,0 +1,23 @@
+.chart {
+  border-radius: var(--border-radius__sm);
+  border:var(--border__table);
+  overflow: hidden;
+  width: 444px;
+  box-sizing: border-box;
+  > .chart-header {
+    background-color: #F5F5F5;
+    > .chart-header__title {
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--color__gray);
+      padding: 11px 20px 11px 20px;
+    }
+  }
+
+  > .chart-bars {
+    height: 240px;
+    > div {
+      padding: 30px 15px 15px;
+    }
+  }
+}

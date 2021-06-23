@@ -1,0 +1,5 @@
+mutation deleteCustomerAttachment($id: Int!) {
+    deleteCustomerAttachment(id: $id) {
+        success
+    }
+}

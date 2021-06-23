@@ -1,0 +1,62 @@
+.address-book-page {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    svg {
+      margin-right: 10px;
+      color: green;
+    }
+
+    .phone-contact,
+    .mail-contact {
+      display: flex;
+      align-items: center;
+    }
+
+    .mail-contact {
+      margin-left: 26px;
+    }
+  }
+  .link-like {
+    color: var(--color__blue);
+    cursor: pointer;
+  }
+
+  .groups {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .address:not(:last-child) {
+    margin-bottom: 10px;
+
+    ::after {
+      display: block;
+      content: '';
+      width: 100%;
+      height: 1px;
+      margin-top: 5px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 35px;
+    color: #fff;
+    font-size: 0.8em;
+    border-radius: 4px;
+  }
+
+  .actions {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .custom-button {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,15 @@
+fragment callDetail on CallResult {
+    phoneNumber
+    callStats {
+        nrOfCallsDay
+        nrOfCallsNight
+        totalDurationDay
+        totalDurationNight
+    }
+    callList {
+        dayNight
+        callDateTime
+        callDuration
+        caller
+    }
+}

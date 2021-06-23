@@ -1,0 +1,5 @@
+subscription userStatusUpdated {
+    userStatusUpdated {
+        active
+    }
+}

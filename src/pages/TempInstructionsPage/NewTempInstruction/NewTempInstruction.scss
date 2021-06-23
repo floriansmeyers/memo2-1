@@ -1,0 +1,22 @@
+.new-instruction-form {
+  &.ant-form {
+    background-color: var(--background-color__gray_light);
+    padding: 25px;
+    > .new-instruction-header {
+      > a {
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+        display: block;
+      }
+      > .new-instruction__date-container {
+        display: flex;
+        align-items: center;
+
+        .ant-picker {
+          height: 41px;
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.custom-button {
+  &.ant-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 131px;
+    border-radius: var(--border-radius__button);
+    font: var(--font__content-standard);
+    border: unset;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: var(--color__white);
+    background-color: var(--color__blue);
+  }
+}
+
+.blue {
+  &.ant-btn {
+    color: var(--color__white);
+    background-color: var(--color__blue);
+  }
+}
+
+.light-blue {
+  &.ant-btn {
+    color: var(--color__blue);
+    background-color: var(--background-color__blue_light);
+  }
+}
+
+.gray {
+  &.ant-btn {
+    color: var(--color__gray_lighter2);
+    background-color: var(--background-color__gray_light3);
+  }
+}
+
+.white {
+  &.ant-btn {
+    background-color: var(--color__white);
+    color: var(--color__gray_lighter1);
+    border: 1px solid #979797;
+  }
+}
+
+.green {
+  color: var(--color__white);
+  background-color: var(--color__green_active);
+}
+
+.beige {
+  &.ant-btn {
+    color: #e09c00;
+    background-color: rgba(254, 156, 0, 0.2);
+    &:hover {
+      color: #e09c00;
+    }
+    .anticon-phone {
+      svg {
+        color: #e09c00 !important;
+      }
+    }
+  }
+}

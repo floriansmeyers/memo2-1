@@ -1,0 +1,9 @@
+#import "./conversationPreviewFragment.graphql"
+query getSocialConversationsPreview($filter: SocialConversationFilterModel, $sort: SortOrder, $skip: Int, $limit: Int) {
+    socialConversations(filter: $filter, sort: $sort, skip: $skip, limit: $limit) {
+        count
+        items {
+            ...socialConversationPreview
+        }
+    }
+}

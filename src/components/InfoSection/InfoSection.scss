@@ -1,0 +1,8 @@
+.info-section-container {
+  display: flex;
+  justify-content: space-between;
+  border: var(--border__page-header);
+  border-radius: 0px 0px 0px 5px;
+  background-color: var(--color__white);
+  min-height: 69px;
+}

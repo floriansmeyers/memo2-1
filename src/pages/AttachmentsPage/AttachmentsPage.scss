@@ -1,0 +1,45 @@
+.attachments-page {
+  .status-indicator {
+    display: flex;
+    align-items: center;
+
+    span {
+      margin-right: 20px;
+    }
+    .status-dot {
+      display: block;
+      width: 4px;
+      height: 4px;
+      border-radius: 4px;
+    }
+  }
+
+  .attachments-page__table-actions {
+    display: flex;
+    align-items: center;
+
+    .table-action {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      &:hover {
+        color: var(--color__blue);
+      }
+
+      span {
+        margin-left: 6px;
+        margin-right: 6px;
+      }
+    }
+
+    .ant-divider-vertical {
+      margin: 0 21px;
+      height: 28px;
+      border-left: 3px solid rgba(152, 152, 152, 0.2);
+    }
+  }
+
+  .ant-alert {
+    margin-top: 20px;
+  }
+}

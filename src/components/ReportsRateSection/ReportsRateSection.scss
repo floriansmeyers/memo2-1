@@ -1,0 +1,47 @@
+.rate-section {
+  padding: 23px 20px;
+  font-size: 16px;
+  max-width: 385px;
+
+  .txt-bold {
+    font-weight: 700;
+  }
+
+  > .rate-section__time {
+    display: flex;
+    justify-content: space-between;
+    > .icon-block {
+      > .icon-block__title {
+        color: #ef9c00;
+      }
+    }
+    > .rate-section__time-hours {
+      color: var(--color__blue);
+      font-weight: 300;
+    }
+  }
+  > .rate-section__subtitle {
+    margin-left: 30px;
+    color: var(--color__gray_light);
+  }
+
+  &--night {
+    > .rate-section__time {
+      > .icon-block {
+        > .icon-block__title {
+          color: #a270f0;
+        }
+      }
+    }
+  }
+
+  &--total {
+    > .rate-section__title {
+      color: var(--color__gray_light);
+      > .rate-section__title-key {
+        margin-right: 15px;
+        color: #707070;
+      }
+    }
+  }
+}

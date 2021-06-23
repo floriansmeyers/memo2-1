@@ -1,0 +1,10 @@
+query getCurrentCommunicationCompany {
+    getCurrentCommunicationCompany {
+        id
+        name
+        profileName
+        address1
+        address2
+        __typename
+    }
+}

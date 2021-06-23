@@ -1,0 +1,5 @@
+mutation updateChannel($id: ID!, $input: PairedChannelUpdateInput!) {
+  updateChannel(id: $id, input: $input) {
+    id
+  }
+}

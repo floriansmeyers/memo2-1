@@ -1,0 +1,6 @@
+#import "./conversationPreviewFragment.graphql"
+mutation bulkUpdateSocialConversations($ids: [ID!]!, $input: UpdateSocialConversationInputModel!) {
+    bulkUpdateSocialConversations(ids: $ids, input: $input) {
+        id
+    }
+}

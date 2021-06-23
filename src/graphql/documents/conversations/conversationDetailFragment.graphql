@@ -1,0 +1,97 @@
+fragment conversationDetail on Conversation {
+        id
+        createdBy {
+            displayName
+        }
+        events {
+            eventTime
+            __typename
+        }
+        participants {
+            channel
+            channelId
+        }
+        related {
+            id
+        }
+        read
+        archived
+        __typename
+#        ... on TextConversation {
+#            multipleResponsesTill
+#            canSendResponse
+#            channel {
+#                channelIdentifier
+#                type
+#            }
+#            agentMessages {
+#                id
+#                messages {
+#                    content
+#                    messageTime
+#                    sender {
+#                        displayName
+#                    }
+#                }
+#                attachments {
+#                    fileName
+#                    url
+#                }
+#                structuredMessage {
+#                    name
+#                    fields {
+#                        sequence
+#                        fieldType {
+#                            name
+#                            regExForValidation
+#                            regExForValidChars
+#                            mask
+#                            maxLength
+#                            errorMessage
+#                        }
+#                        label
+#                        description
+#                        required
+#                        readonly
+#                        defaultValue
+#                        options
+#                    }
+#                    values {
+#                        sequence
+#                        value
+#                    }
+#                }
+#            }
+#            messages {
+#                channelType
+#                external
+#                attachments {
+#                    fileName
+#                    url
+#                }
+#                content
+#                messageTime
+#                sender {
+#                    id
+#                    displayName
+#                    __typename
+#                }
+#                source
+#                destination
+#                conversationId
+#            }
+#            status
+#            preview {
+#                type
+#                ... on TextConversationPreviewTextAndAttachments {
+#                    type
+#                    messageTime
+#                    content
+#                    attachments {
+#                        fileName
+#                        url
+#                    }
+#                }
+#            }
+#        }
+}

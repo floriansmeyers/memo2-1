@@ -1,0 +1,11 @@
+query getCustomerChatData {
+    customerChatData {
+        guid
+        username
+        extension
+        mainFicheId
+        customerId
+        userEmail
+        serviceGroup
+    }
+}

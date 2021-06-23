@@ -1,0 +1,13 @@
+.action-icons {
+  display: flex;
+  align-items: center;
+
+  svg {
+    width: 18px;
+    height: 18px;
+    margin-left: 12px;
+    margin-right: 12px;
+    color: var(--color__blue);
+    cursor: pointer;
+  }
+}

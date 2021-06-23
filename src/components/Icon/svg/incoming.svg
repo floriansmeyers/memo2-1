@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #8c8c8c;
+        font-size: 16px;
+        font-family: FontAwesome5Pro-Light, 'Font Awesome \35  Pro';
+        font-weight: 300;
+      }
+    </style>
+  </defs>
+  <text id="_" data-name="+" class="cls-1" transform="translate(0 15)"><tspan x="0" y="0"></tspan></text>
+</svg>

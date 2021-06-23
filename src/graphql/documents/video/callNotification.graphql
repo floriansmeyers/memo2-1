@@ -1,0 +1,7 @@
+subscription callNotification {
+    callNotification {
+        callId
+        customerId
+        removeCall
+    }
+}

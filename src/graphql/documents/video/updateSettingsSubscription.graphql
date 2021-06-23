@@ -1,0 +1,14 @@
+subscription settingsUpdated($customerId: String!, $platformId: String!) {
+    settingsUpdated(customerId: $customerId, platformId: $platformId) {
+        customerId
+        platformId
+        locations {
+            id
+            title
+            description
+            agentSideRotation
+            clientSideRotation
+            clientSideRotationInputStream
+        }
+    }
+}

@@ -1,0 +1,5 @@
+mutation deleteStandby($id: ID!) {
+    deleteStandby(id: $id) {
+        success
+    }
+}

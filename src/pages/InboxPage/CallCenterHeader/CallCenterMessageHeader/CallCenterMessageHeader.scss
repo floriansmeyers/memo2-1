@@ -1,0 +1,39 @@
+.call-center-message-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--background-color__gray_light2);
+  border: var(--border__page-header);
+
+  .call-center-message-title {
+    display: flex;
+    flex-direction: column;
+    font: var(--font__inbox-preview-title);
+    letter-spacing: 0.51px;
+    color: var(--color__blue);
+
+    .call-center-submessages {
+      font: var(--font__content-tabs);
+      color: #8c8c8c;
+    }
+  }
+  .call-center-message-icons {
+    display: flex;
+    align-items: center;
+
+    svg {
+      width: 18px;
+      height: 18px;
+      margin-right: 12px;
+      color: var(--color__blue);
+    }
+
+    .ant-btn {
+      margin-left: 12px;
+      &:not(:last-child) {
+        margin-right: 12px;
+      }
+    }
+  }
+}

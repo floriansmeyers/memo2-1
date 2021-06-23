@@ -1,0 +1,3 @@
+query checkConversationLocked($agentMessageId: ID!, $conversationId: ID!) {
+    checkConversationLocked(agentMessageId: $agentMessageId, conversationId: $conversationId)
+}

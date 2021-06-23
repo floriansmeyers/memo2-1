@@ -1,0 +1,7 @@
+#import "./callModelFragment.graphql"
+
+query incomingCalls($filter: CallFilterInput, $limit: Int, $skip: Int, $sort: [SortInput!]) {
+    incomingCalls(filter: $filter, limit: $limit, skip: $skip, sort: $sort) {
+        ...callDetail
+    }
+}

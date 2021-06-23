@@ -1,0 +1,12 @@
+query getUser($id: ID!) {
+    user(id: $id) {
+        id
+        firstName
+        lastName
+        customers
+        emailAddress
+        role
+        phoneNumber
+        locale
+    }
+}

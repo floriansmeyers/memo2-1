@@ -1,0 +1,25 @@
+.contact-address-section {
+  padding-bottom: 15px;
+
+  .contact-address-input {
+    padding-top: 15px;
+
+    &:not(:last-of-type) {
+      border-bottom: 1px dotted lightgray;
+    }
+
+    .icon {
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .link-like-button {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--color__blue);
+    cursor: pointer;
+    width: fit-content;
+  }
+}

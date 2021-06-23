@@ -1,0 +1,13 @@
+query getCustomers($limit: Int, $skip: Int, $sort: [SortInput!], $filter: CustomerFilterInput) {
+    customers(limit: $limit, skip: $skip, sort: $sort, filter: $filter) {
+        count
+        items {
+            id
+            platformId
+            parentId
+            name
+            groupId
+            appointmentContractYn
+        }
+    }
+}

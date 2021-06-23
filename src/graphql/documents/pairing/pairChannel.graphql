@@ -1,0 +1,8 @@
+mutation pairChannel($input: PairChannelInput!) {
+    pairChannel(input: $input) {
+        id
+        type
+        account
+        active
+    }
+}

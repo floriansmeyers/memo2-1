@@ -1,0 +1,98 @@
+.video-reception-page {
+  .custom-button {
+    &.ant-btn {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  .video-reception__form {
+    .video-reception__section {
+      margin: 0 20px 20px 0;
+      color: var(--color__gray_light);
+
+      .video-reception__section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font: var(--font__content-title);
+        height: 44px;
+        background-color: var(--background-color__gray_light2);
+        border: var(--border__table);
+        border-radius: 5px 5px 0 0;
+        padding: 0 20px;
+      }
+
+      .video-reception__section-main {
+        min-height: 63px;
+        background-color: var(--color__white);
+        font: var(--font__content-standard);
+        border: var(--border__table);
+        border-radius: 0 0 5px 5px;
+        border-top: unset;
+        padding: 20px;
+
+        .video-reception__content {
+          width: 500px;
+          margin-bottom: 0;
+
+          img {
+            width: 100%;
+          }
+
+          .ant-form-item {
+            display: block;
+            label {
+              font: var(--font__content-standard);
+              color: var(--color__gray_light);
+              &::after {
+                content: '';
+              }
+            }
+          }
+          .ant-input {
+            padding: 10.34px 15px;
+            border-radius: var(--border-radius__sm);
+            border: var(--border__table);
+            background-color: var(--color__white);
+            font: var(--font__content-tabs);
+            color: var(--color__gray_light);
+            &::placeholder {
+              font: var(--font__content-tabs);
+              color: var(--color__gray_light);
+              opacity: 0.7;
+            }
+          }
+
+          .ant-checkbox-group {
+            .ant-checkbox-group-item {
+              font: var(--font__content-tabs);
+            }
+          }
+
+          .ant-select {
+            .ant-select-selector {
+              display: flex;
+              align-items: center;
+              height: 44px;
+              border-radius: var(--border-radius__sm);
+              border: var(--border__table);
+              background-color: var(--color__white);
+              .ant-select-selection-item,
+              .ant-select-item {
+                font: var(--font__content-tabs);
+                color: var(--color__gray_light);
+              }
+            }
+          }
+        }
+
+        .info-form-actions {
+          margin: 20px 0;
+          .custom-button {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+}

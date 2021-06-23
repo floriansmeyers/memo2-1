@@ -1,0 +1,22 @@
+.customer-info-page {
+  .ant-tabs {
+    .ant-tabs-nav {
+      padding-left: 20px;
+      border: var(--border__page-header);
+      border-top: unset;
+      border-radius: 0 0 0 5px;
+
+      .ant-tabs-tab {
+        font: var(--font__content-tabs);
+        color: var(--color__gray_light);
+      }
+
+      &::before {
+        border: unset;
+      }
+      .ant-tabs-tab {
+        padding: 17px 0;
+      }
+    }
+  }
+}

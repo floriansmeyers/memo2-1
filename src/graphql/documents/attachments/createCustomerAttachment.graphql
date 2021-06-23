@@ -1,0 +1,13 @@
+mutation createCustomerAttachment($input: CreateCustomerAttachmentInput!) {
+    createCustomerAttachment(input: $input) {
+        id
+        name
+        validFrom
+        validTill
+        attachment {
+            fileName
+            url
+        }
+        active
+    }
+}

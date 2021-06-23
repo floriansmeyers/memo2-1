@@ -1,0 +1,31 @@
+.contact-communication-section {
+  padding-bottom: 15px;
+
+  .link-like-button {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--color__blue);
+    cursor: pointer;
+    width: fit-content;
+  }
+
+  .contact-communication-input {
+    padding-top: 15px;
+
+    &:not(:last-of-type) {
+      border-bottom: 1px dotted lightgray;
+    }
+
+    .icon {
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

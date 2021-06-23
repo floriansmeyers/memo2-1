@@ -1,0 +1,19 @@
+mutation createStandby($input: CreateStandbyInput!) {
+    createStandby(input: $input) {
+        id
+        from {
+            hours
+            minutes
+        }
+        to {
+            hours
+            minutes
+        }
+        notifyChannels
+        crmContacts {
+            id
+            firstName
+            lastName
+        }
+    }
+}

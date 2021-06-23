@@ -1,0 +1,32 @@
+.third-column {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  > .divider {
+    background: var(--color__gray_lighter1);
+    width: 3px;
+    border-radius: var(--border-radius__md);
+    opacity: 0.2;
+    height: 28px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  > button {
+    &.ant-btn {
+      margin-top: 0;
+      font-weight: 400;
+      border: unset;
+      padding: 0;
+      background-color: transparent;
+      min-width: unset;
+      display: flex;
+      align-items: center;
+
+      > .anticon {
+        margin-bottom: 3px;
+      }
+    }
+  }
+}

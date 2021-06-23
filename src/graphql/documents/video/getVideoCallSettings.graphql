@@ -1,0 +1,7 @@
+#import "./videoCallSettingsFragment.graphql"
+
+query getVideoCallSettings {
+    videoCallSettings {
+        ...videoCallSettingsFragment
+    }
+}

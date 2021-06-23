@@ -1,0 +1,9 @@
+#import "./conversationPreviewFragment.graphql"
+query getSocialRelatedConversations($id: ID!) {
+    socialConversation(id: $id) {
+        id
+        related {
+            ...socialConversationPreview
+        }
+    }
+}

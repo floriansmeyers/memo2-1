@@ -1,0 +1,51 @@
+.message-card {
+  height: 62px;
+  min-width: 129px;
+  margin-right: 20px;
+
+  border-radius: var(--border-radius__sm);
+  padding: 8px;
+
+  &--open,
+  &--question,
+  &--info {
+    background-color: #efefef;
+    color: #afafaf;
+  }
+  &--total {
+    background-color: #d3ebfe;
+    color: #2297f8;
+  }
+  &--callback,
+  &--callback_himself,
+  &--email_back,
+  &--finished {
+    background-color: #f9ebcc;
+    color: #e09c00;
+  }
+  &--high,
+  &--important {
+    background-color: #fce2d1;
+    color: #f07019;
+  }
+  &--urgent {
+    background-color: #e8b7be;
+    color: var(--color__red_active);
+  }
+  > .message-card__main {
+    display: flex;
+    align-items: center;
+    > span {
+      margin-right: 8px;
+      svg {
+        height: 13px;
+        width: 13px;
+      }
+    }
+  }
+  > .message-card__qty {
+    display: flex;
+    justify-content: flex-end;
+    font: bold 24px/32px Nunito Sans;
+  }
+}

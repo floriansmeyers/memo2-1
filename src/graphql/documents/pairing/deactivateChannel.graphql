@@ -1,0 +1,5 @@
+mutation deactivateChannel($id: ID!) {
+    deactivateChannel(id: $id) {
+        success
+    }
+}

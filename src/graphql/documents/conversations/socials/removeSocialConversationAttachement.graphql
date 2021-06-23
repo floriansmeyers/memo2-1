@@ -1,0 +1,3 @@
+mutation removeSocialConversationAttachement($input: RemoveSocialMessageAttachmentInputModel!) {
+    removeSocialConversationAttachment(input: $input)
+}

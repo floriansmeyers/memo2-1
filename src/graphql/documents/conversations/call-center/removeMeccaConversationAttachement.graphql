@@ -1,0 +1,3 @@
+mutation removeMeccaConversationAttachement($input: RemoveMeccaMessageAttachmentInputModel!) {
+    removeMeccaMessageAttachment(input: $input)
+}

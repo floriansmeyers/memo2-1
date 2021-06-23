@@ -1,0 +1,3 @@
+mutation addMeccaConversationAttachment($input: AddMeccaMessageAttachmentInputModel!) {
+    addMeccaMessageAttachment(input: $input)
+}

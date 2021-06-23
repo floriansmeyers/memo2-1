@@ -1,0 +1,40 @@
+.call-center-title-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  width: 492px;
+
+  .call-center-title-left {
+    display: flex;
+    align-items: center;
+
+    .call-center-title {
+      display: flex;
+      flex-direction: column;
+      font: var(--font__content-inbox-title);
+      letter-spacing: 0.51px;
+      color: var(--color__gray);
+
+      .call-center-messages-count {
+        font: normal 14px/20px var(--font-family__sidebar);
+      }
+    }
+  }
+  .call-center-title-right {
+    display: flex;
+    align-items: center;
+
+    .view-button {
+      outline: none;
+      svg {
+        width: 18px;
+        height: 18px;
+        margin-left: 12px;
+        margin-right: 12px;
+        cursor: pointer;
+        color: var(--color__blue);
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+query getUsers($filter: UsersFilterInput, $sort: [SortInput!], $skip: Int, $limit: Int) {
+  users(filter: $filter, sort: $sort, skip: $skip, limit: $limit){
+    count
+    items {
+        id
+        emailAddress
+        firstName
+        lastName
+        phoneNumber
+    }
+  }
+}

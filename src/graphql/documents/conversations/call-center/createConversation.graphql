@@ -1,0 +1,7 @@
+#import "./conversationPreviewFragment.graphql"
+
+mutation createMeccaConversation($input: CreateMeccaConversationInputModel!) {
+    createMeccaConversation(input: $input) {
+        ...meccaConversationPreview
+    }
+}

@@ -1,0 +1,25 @@
+query getDashboardNotifications($filter: NotificationFilter, $limit: Int, $skip: Int, $sort: [SortInput!]) {
+    dashboard {
+        notifications(filter: $filter, limit: $limit, skip: $skip, sort: $sort) {
+            count
+            items {
+                date
+                type
+                ... on NotificationInvoice {
+                    amount
+                }
+                ... on NotificationConversation {
+                    status
+                    conversationId
+                    conversation {
+                        createdBy {
+                            displayName
+                            firstName
+                            lastName
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

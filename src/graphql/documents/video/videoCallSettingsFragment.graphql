@@ -1,0 +1,32 @@
+fragment videoCallSettingsFragment on VideoCallSettings {
+    backgroundImage
+    colors {
+        background
+        buttonsBackground
+        buttonsText
+        text
+    }
+    defaultLanguage
+    languages
+    locale {
+        content {
+            language
+            value
+        }
+        type
+    }
+    locations {
+        id
+        description
+        title
+        clientSideRotation
+        clientSideRotationInputStream
+        agentSideRotation
+    }
+    logoImage
+    name
+    redirect
+    redirectDelay
+    template
+    timeoutDelay
+}

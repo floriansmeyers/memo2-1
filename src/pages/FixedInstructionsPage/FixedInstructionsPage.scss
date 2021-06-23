@@ -1,0 +1,55 @@
+.fixed-collapsed {
+  &.ant-collapse {
+    background-color: var(--color__white);
+    border: unset;
+
+    .ant-collapse-item {
+      margin: 20px 20px 20px 0;
+      color: var(--color__gray_light);
+      border: unset;
+
+      .ant-collapse-header {
+        background-color: var(--background-color__gray_light2);
+        color: var(--color__gray_light);
+        font: var(--font__content-title);
+        padding: 11.3px 55px;
+        border: var(--border__table);
+        border-radius: 5px 5px 0 0;
+
+        .anticon {
+          left: 20px;
+          padding-top: 9px;
+          svg {
+            font-size: 17px;
+          }
+        }
+      }
+
+      .ant-collapse-content {
+        border: unset;
+        .ant-collapse-content-box {
+          background-color: var(--color__white);
+          color: var(--color__gray_light);
+          font-size: var(--font-size__standard);
+          padding: 20px 55px;
+          border: var(--border__table);
+          border-radius: 0 0 5px 5px;
+          border-top: unset;
+        }
+      }
+    }
+
+    .ant-collapse-item:last-child {
+      .ant-collapse-header {
+        border: var(--border__table);
+        border-radius: 5px 5px 0 0;
+      }
+    }
+
+    .ant-collapse-item:not(.ant-collapse-item-active) {
+      .ant-collapse-header {
+        border-radius: var(--border-radius__sm);
+      }
+    }
+  }
+}

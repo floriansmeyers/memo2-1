@@ -1,0 +1,33 @@
+.reports-date-select {
+  &.ant-select {
+    .ant-select-selector {
+      background-color: var(--color__white);
+      border: 1px solid var(--background-color__gray_light);
+      font-size: var(--font-size__standard);
+      font-weight: 600;
+      margin: 0;
+      padding: 5.84px 20px;
+      display: flex;
+      align-items: center;
+      height: 40px;
+      font: var(--font__content-standard);
+      color: #8c8c8c;
+    }
+  }
+
+  &--month {
+    &.ant-select {
+      .ant-select-selector {
+        border-radius: 6px 0px 0px 6px;
+      }
+    }
+  }
+  &--year {
+    &.ant-select {
+      .ant-select-selector {
+        border-radius: 0px 6px 6px 0px;
+      }
+      margin-right: 35px;
+    }
+  }
+}

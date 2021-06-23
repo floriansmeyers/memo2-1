@@ -1,0 +1,28 @@
+query getCustomerAttachments($filter: CustomerAttachmentFilter, $limit: Int, $skip: Int, $sort: [SortInput!]) {
+    customerAttachments(filter: $filter, limit: $limit, skip: $skip, sort: $sort) {
+        count
+        items {
+            id
+            name
+            validFrom
+            validTill
+            active
+            type
+            attachment {
+                fileName
+                url
+            }
+            versions {
+                id
+                validFrom
+                validTill
+                type
+                active
+                version
+                attachment {
+                    url
+                }
+            }
+        }
+    }
+}

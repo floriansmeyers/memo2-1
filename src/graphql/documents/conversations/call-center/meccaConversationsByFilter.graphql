@@ -1,0 +1,6 @@
+#import "./conversationDetailsFragment.graphql"
+query meccaConversationsByFilter($ids: [ID!], $from: DateTime, $till: DateTime) {
+    meccaConversationsByFilter(ids: $ids, from: $from, till: $till) {
+        ...meccaConversationDetails
+    }
+}

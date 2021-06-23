@@ -1,0 +1,8 @@
+fragment baseCallReporting on CallBaseReporting {
+    totalNrOfCalls
+    title
+    yAxisTitle
+    xAxisTitle
+    yAxisValues
+    xAxisValues
+}

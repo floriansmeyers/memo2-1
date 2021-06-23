@@ -1,0 +1,25 @@
+.attachments-versions-modal {
+  .text-right {
+    text-align: right;
+  }
+
+  .table {
+    display: table;
+    width: 100%;
+    a {
+      :hover {
+        background: #eee;
+      }
+    }
+    .tr {
+      display: table-row;
+    }
+    .tc {
+      display: table-cell;
+      padding: 5px;
+      &.th {
+        font-weight: bold;
+      }
+    }
+  }
+}

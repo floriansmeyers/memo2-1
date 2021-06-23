@@ -1,0 +1,16 @@
+.instruction-details {
+  > .instruction-header {
+    background-color: var(--background-color__gray_light);
+    padding: 25px;
+    display: flex;
+    align-items: center;
+      > a {
+        display: block;
+      }
+  }
+
+  > .instruction-body {
+    padding: 25px;
+    background-color: #eaeaea;
+  }
+}

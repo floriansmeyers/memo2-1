@@ -1,0 +1,6 @@
+#import "./conversationDetailsFragment.graphql"
+subscription meccaConversationBulkUpdated {
+    meccaConversationBulkUpdated {
+        ...meccaConversationDetails
+    }
+}

@@ -1,0 +1,6 @@
+#import "./conversationDetailsFragment.graphql"
+query getSocialConversation($id: ID!) {
+    socialConversation(id: $id) {
+        ...socialConversationDetails
+    }
+}

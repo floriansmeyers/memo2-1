@@ -1,0 +1,25 @@
+.temp-instructions-page {
+  .custom-button {
+    &.ant-btn {
+      margin-top: 20px;
+    }
+  }
+
+  .ant-tabs-nav {
+    height: 57px;
+    margin-top: 20px;
+    padding-left: 20px;
+    border: var(--border__page-header);
+    border-radius: 5px 0 0 5px;
+    font: var(--font__content-tabs);
+    color: var(--color__gray);
+
+    .ant-tabs-ink-bar {
+      height: 3px;
+      border-radius: 5px 5px 0px 0px;
+    }
+    .ant-tabs-nav-operations {
+      display: none;
+    }
+  }
+}

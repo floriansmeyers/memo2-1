@@ -1,0 +1,5 @@
+mutation deleteCustomerCrmContact($id: Int!) {
+    deleteCustomerCrmContact(id: $id) {
+        success
+    }
+}

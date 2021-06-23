@@ -1,0 +1,113 @@
+query search($filter: SearchFilterInput, $search: String!, $limit: Int, $skip: Int, $sort: [SortInput!]) {
+    search(filter: $filter, search: $search, limit: $limit, skip: $skip, sort: $sort) {
+        count
+        countByType {
+            count
+            type
+        }
+        items {
+            type
+            ... on SearchMessage {
+                message {
+                    id
+                    channelType
+                    content
+                    conversationId
+                    messageTime
+                    sender {
+                        id
+                        firstName
+                        lastName
+                    }
+                }
+            }
+            ... on SearchAgentMessage {
+                agentMessage {
+                    id
+                    channelType
+                    content
+                    conversationId
+                    messageTime
+                    sender {
+                        id
+                        firstName
+                        lastName
+                    }
+                }
+            }
+            ... on SearchAttachment {
+                attachment {
+                    fileName
+                    url
+                }
+            }
+            ... on SearchCustomerCrmContact {
+                customerCrmContact {
+                    id
+                    title
+                    firstName
+                    lastName
+                    sex
+                    functionName
+                    addresses {
+                        id
+                        city
+                        country
+                        postalCode
+                        address
+                        description
+                    }
+                    communications {
+                        type {
+                            id
+                            name
+                            category
+                        }
+                        sequence
+                        value
+                        description
+                        forwardStatus
+                        forwardCondition
+                        passThroughStatus
+                        passThroughCondition
+                    }
+                    groups {
+                        groupId
+                        group {
+                            id
+                            name
+                            subGroups {
+                                id
+                                name
+                            }
+                        }
+                        subGroupId
+                        subGroup {
+                            id
+                            name
+                        }
+                    }
+                }
+            }
+            ... on SearchCustomerFixedInstruction {
+                customerFixedInstruction {
+                    id
+                    updatedAt
+                    name
+                    content
+                }
+            }
+            ... on SearchCustomerTemporaryInstruction {
+                customerTemporaryInstruction {
+                    id
+                    updatedAt
+                    name
+                    content
+                    validFrom
+                    validUntil
+                    active
+                }
+            }
+        }
+    }
+}

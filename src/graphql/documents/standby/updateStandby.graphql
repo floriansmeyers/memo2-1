@@ -1,0 +1,19 @@
+mutation updateStandby($id: ID! $input: UpdateStandbyInput!) {
+    updateStandby(id: $id, input: $input) {
+        id
+        from {
+            hours
+            minutes
+        }
+        to {
+            hours
+            minutes
+        }
+        notifyChannels
+        crmContacts {
+            id
+            firstName
+            lastName
+        }
+    }
+}

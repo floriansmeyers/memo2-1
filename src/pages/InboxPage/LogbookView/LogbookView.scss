@@ -1,0 +1,28 @@
+.logbook-items {
+  padding: 25px;
+  height: 600px;
+  overflow-y: auto;
+
+  > .ant-spin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+ > .logbook-item {
+   padding: 15px;
+   margin-bottom: 15px;
+   margin-top: 15px;
+   background-color: var(--background-color__gray_light);
+   box-shadow: 3px 1px 7px -1px rgba(34, 60, 80, 0.2);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   border-radius: 3px;
+
+   > .logbook-item__name {
+     font-weight: 600;
+   }
+ }
+}

@@ -1,0 +1,12 @@
+query getCurrentUser {
+    getCurrentUser {
+        id
+        firstName
+        lastName
+        customers
+        emailAddress
+        role
+        phoneNumber
+        locale
+    }
+}
